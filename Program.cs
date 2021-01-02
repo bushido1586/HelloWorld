@@ -6,21 +6,15 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int num1 = 13;
-            int num2 = 20;
-            int num3, num4, num5;
-            int sum = num1 + num2;
+            string myName = "Brad";
+            string message = "My name is " + myName;
 
-            double d1 = 3.5;
-            double d2 = 4.337;
-            double sumD = d1 / d2;
+            string capsMessage = message.ToUpper();
 
-            num3 = 15;
-            
 
-            Console.WriteLine("The sum of " + num1 + " and " + num2+" is " +sum);
-            Console.WriteLine(d1 + " divided by "+ d2+ " is " +sumD);
+            Console.WriteLine(capsMessage);
             Console.Read();
+
         }
     }
 }
