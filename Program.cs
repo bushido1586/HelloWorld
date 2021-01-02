@@ -11,8 +11,9 @@ namespace HelloWorld
 
             string capsMessage = message.ToUpper();
 
+            string lowerMessage = message.ToLower();
 
-            Console.WriteLine(capsMessage);
+            Console.WriteLine(lowerMessage);
             Console.Read();
 
         }
