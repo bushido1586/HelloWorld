@@ -8,11 +8,14 @@ namespace HelloWorld
         {
             int num1 = 13;
             int num2 = 20;
+            int num3, num4, num5;
             int sum = num1 + num2;
 
             double d1 = 3.5;
             double d2 = 4.337;
             double sumD = d1 / d2;
+
+            num3 = 15;
             
 
             Console.WriteLine("The sum of " + num1 + " and " + num2+" is " +sum);
