@@ -6,8 +6,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello, Brad");
+            int num1 = 13;
+            int num2 = 20;
+            int sum = num1 + num2;
+
+            Console.WriteLine("The sum of " + num1 + " and " + num2+" is " +sum);
             Console.Read();
         }
     }
