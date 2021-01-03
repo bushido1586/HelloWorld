@@ -6,15 +6,14 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            string myName = "Brad";
-            string message = "My name is " + myName;
+            Console.Write("Enter a string and press enter :");
+            string readInput = Console.ReadLine();
+            Console.WriteLine("You have entered {0}", readInput);
 
-            string capsMessage = message.ToUpper();
-
-            string lowerMessage = message.ToLower();
-
-            Console.WriteLine(lowerMessage);
-            Console.Read();
+            Console.Write("Enter a string and press enter :");
+            int asciiValue = Console.Read();
+            Console.WriteLine("ASCII value is {0}:", asciiValue);
+            Console.ReadKey();
 
         }
     }
