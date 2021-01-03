@@ -23,8 +23,13 @@ namespace HelloWorld
             //type conversion
             string myString = myDouble.ToString();//-"13.37"
             num.ToString();
+            string myFloatString = myFloat.ToString();
 
-            Console.WriteLine(myInt);
+            bool sunIsShining = false;
+
+            string myBoolString = sunIsShining.ToString();
+
+            Console.WriteLine(myBoolString);
 
             
             
