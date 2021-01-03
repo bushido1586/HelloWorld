@@ -6,8 +6,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Clear();
             Console.Write("Enter a string and press enter :");
             string readInput = Console.ReadLine();
             Console.WriteLine("You have entered {0}", readInput);
