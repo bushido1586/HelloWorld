@@ -19,7 +19,14 @@ namespace HelloWorld
             //Explicit conversion
             //cast double to int;
             myInt = (int)myDouble;
+
+            //type conversion
+            string myString = myDouble.ToString();//-"13.37"
+            num.ToString();
+
             Console.WriteLine(myInt);
+
+            
             
         }
     }
