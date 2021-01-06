@@ -5,22 +5,17 @@ namespace HelloWorld
 
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-            WriteSomething();
-            WriteMessage("I am an argument and am called from a method");
-
+            
+            Console.WriteLine(Add(15,31));
         }
 
-        public static void WriteSomething()
+        public static int Add(int num1, int num2)
         {
-            Console.WriteLine("I am called from a method");
+            return num1 + num2;
         }
 
-        public static void WriteMessage(string myText)
-        {
-            Console.WriteLine(myText);
-        }
     }
 }
