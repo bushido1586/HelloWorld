@@ -8,7 +8,7 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            
+            Console.WriteLine(Add(Add(1, 2), Add(3, 4)));
             Console.WriteLine(Add(15,31));
         }
 
