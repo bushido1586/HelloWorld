@@ -8,21 +8,17 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number!");
-            string userInput = Console.ReadLine();
+            int num1 = 5;
+            int num2 = 0;
+            int result;
             try
             {
-                int userInputAsInt = int.Parse(userInput);
+                result = num1 / num2;
             }
-            catch (FormatException)
+            catch (DivideByZeroException)
             {
-                Console.WriteLine("Format exception, please enter correct type next time.");
+                Console.WriteLine("Can't divide by zero!");
             }
-            catch (Exception)
-            {
-                Console.WriteLine("General Exception");
-            }
-
         }
         
     }
