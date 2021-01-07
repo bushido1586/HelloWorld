@@ -8,17 +8,22 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Multiply(5, 7));
-            Console.WriteLine(Division(25, 13));
+            Console.WriteLine(Calculate());
         }
 
-        public static int Multiply(int num1, int num2)
+        public static int Calculate()
         {
-            return num1 * num2;
+            Console.WriteLine("Please enter the first number");
+            string input1 = Console.ReadLine();
+            Console.WriteLine("Please enter the second number");
+            string input2 = Console.ReadLine();
+
+            int num1 = int.Parse(input1);
+            int num2 = int.Parse(input2);
+
+            int result = num1 + num2;
+            return result;
         }
-        public static double Division(double num1, double num2)
-        {
-            return num1 / num2;
-        }
+        
     }
 }
