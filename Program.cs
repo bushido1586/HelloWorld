@@ -8,22 +8,14 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter today's temp in degrees C");
-            string temp = Console.ReadLine();
-            int tempNum = int.Parse(temp);
-            if(tempNum < 20)
+            string numberAsString = "128";
+            int parsedValue;
+            bool success = int.TryParse(numberAsString, out parsedValue);
+            if (success)
             {
-                Console.WriteLine("Put on a coat");
+                Console.WriteLine("Parsing successful - number is "+ parsedValue);
             }
-            if (tempNum == 20)
-            {
-                Console.WriteLine("Pants and pullover fine");
-            }
-
-            if (tempNum > 20)
-            {
-                Console.WriteLine("Shorts are enough today");
-            }
+            else { Console.WriteLine("parsing failed"); }
         }
         
     }
