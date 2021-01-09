@@ -14,17 +14,19 @@ namespace HelloWorld
             string userName = "";
             userName = Console.ReadLine();
 
-            if (isRegistered)
+            if (isRegistered && userName !="" && userName.Equals("admin"))
             {
                 Console.WriteLine("Hi there, regsitered user");
-                if(userName != "")
-                {
-                    Console.WriteLine("Hi there, "+userName);
-                    if (userName.Equals("admin"))
-                    {
-                        Console.WriteLine("Hello Admin");
-                    }
-                }
+               
+                Console.WriteLine("Hi there, "+userName);
+                   
+                Console.WriteLine("Hello Admin");
+                
+            }
+
+            if ( isAdmin || isRegistered)
+            {
+                Console.WriteLine("You are logged in");
             }
 
         }
