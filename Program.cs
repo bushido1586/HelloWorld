@@ -12,7 +12,8 @@ namespace HelloWorld
             string temperature = Console.ReadLine();
             int numTemp;
             int number;
-            if (int.TryParse(temperature, out number))
+            bool userEntry = int.TryParse(temperature, out number);
+            if(userEntry)
             {
                 numTemp = number;
             }
