@@ -8,25 +8,19 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your usernname: ");
-            bool isAdmin = false;
-            bool isRegistered = true;
-            string userName = "";
-            userName = Console.ReadLine();
+            int age = 25;
 
-            if (isRegistered && userName !="" && userName.Equals("admin"))
+            switch (age)
             {
-                Console.WriteLine("Hi there, regsitered user");
-               
-                Console.WriteLine("Hi there, "+userName);
-                   
-                Console.WriteLine("Hello Admin");
-                
-            }
-
-            if ( isAdmin || isRegistered)
-            {
-                Console.WriteLine("You are logged in");
+                case 15:
+                    Console.WriteLine("Too young to enter club");
+                    break;
+                case 25:
+                    Console.WriteLine("Good to go!");
+                    break;
+                default:
+                    Console.WriteLine("How old are you?");
+                    break;
             }
 
         }
