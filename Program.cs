@@ -8,22 +8,29 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            int age = 25;
+            int temp = -5;
+            string stateOFMater;
+            /*
+            if (temp < 0)
+            
+                stateOFMater = "solid";
+            
+            else
+            
+                stateOFMater = "liquid";
+            */
 
-            switch (age)
-            {
-                case 15:
-                    Console.WriteLine("Too young to enter club");
-                    break;
-                case 25:
-                    Console.WriteLine("Good to go!");
-                    break;
-                default:
-                    Console.WriteLine("How old are you?");
-                    break;
-            }
+
+            //short form
+
+            temp += 30;
+
+            stateOFMater = temp < 0 ? "solid" : "liquid";
+            Console.WriteLine("State of mater is {0}", stateOFMater);
 
         }
+
+
         
     }
 }
