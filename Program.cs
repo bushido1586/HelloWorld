@@ -8,25 +8,11 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            int temp = 100;
-            string stateOFMater;
-            /*
-            if (temp < 0)
-            
-                stateOFMater = "solid";
-            
-            else
-            
-                stateOFMater = "liquid";
-            */
-
-
-            //short form
-            //Challenge: add gas state
-
-            temp += 100;
-            stateOFMater = temp > 100 ? "gas" : temp < 0 ? "solid" : "liquid";
-            Console.WriteLine("State of mater is {0}", stateOFMater);
+            for(int i=0; i < 50; i+=5)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("for loop is done");
 
         }
 
