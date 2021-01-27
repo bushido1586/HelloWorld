@@ -8,9 +8,12 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            for(int i=0; i < 50; i+=5)
+            for(int i=1; i < 20; i++)
             {
-                Console.WriteLine(i);
+               if(i % 2 != 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
             Console.WriteLine("for loop is done");
 
