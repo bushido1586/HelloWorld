@@ -8,15 +8,12 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            for(int i=1; i < 20; i++)
+            int counter = 0;
+            do
             {
-               if(i % 2 != 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            Console.WriteLine("for loop is done");
-
+                Console.WriteLine(counter);
+                counter++;
+            } while (counter < 5);
         }
 
 
