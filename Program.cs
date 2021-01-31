@@ -8,12 +8,21 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            int counter = 0;
+           string wholeText = "";
+            int lengthText = 0;
+
             do
             {
-                Console.WriteLine(counter);
-                counter++;
-            } while (counter < 5);
+                Console.WriteLine("please enter name of a friend");
+                string nameOfFriend = Console.ReadLine();
+
+                int currentLength = nameOfFriend.Length;
+                lengthText += currentLength;
+                wholeText += nameOfFriend;
+
+            } while (lengthText < 20);
+                Console.WriteLine("thanks that was enough!" +wholeText); 
+
         }
 
 
