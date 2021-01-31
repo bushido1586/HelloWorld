@@ -8,21 +8,15 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-           string wholeText = "";
-            int lengthText = 0;
-
-            do
+            int counter = 0;
+            string enteredText = "";
+            while(enteredText.Equals(""))
             {
-                Console.WriteLine("please enter name of a friend");
-                string nameOfFriend = Console.ReadLine();
-
-                int currentLength = nameOfFriend.Length;
-                lengthText += currentLength;
-                wholeText += nameOfFriend;
-
-            } while (lengthText < 20);
-                Console.WriteLine("thanks that was enough!" +wholeText); 
-
+                Console.WriteLine("Please hit enter to increase count by 1. Any other input plus enter to finish");
+                enteredText = Console.ReadLine();
+                counter++;
+                Console.WriteLine("Current people count is {0}", counter);
+            }
         }
 
 
