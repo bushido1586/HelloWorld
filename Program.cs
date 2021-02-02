@@ -8,18 +8,16 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            int counter = 0;
-            string enteredText = "";
-            while(enteredText.Equals(""))
+            for ( int i =0; i<10; i++)
             {
-                Console.WriteLine("Please hit enter to increase count by 1. Any other input plus enter to finish");
-                enteredText = Console.ReadLine();
-                counter++;
-                Console.WriteLine("Current people count is {0}", counter);
+                if(i %2 ==0)
+                {
+                    Console.WriteLine("We skip evens");
+                    continue;
+                }
+                Console.WriteLine(i);
             }
         }
-
-
         
     }
 }
