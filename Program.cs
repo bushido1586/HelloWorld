@@ -8,15 +8,11 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            for ( int i =0; i<10; i++)
-            {
-                if(i %2 ==0)
-                {
-                    Console.WriteLine("We skip evens");
-                    continue;
-                }
-                Console.WriteLine(i);
-            }
+            //create object of class (same as java)/ Instance of Human
+            Human Brad = new Human();
+            Brad.firstName = "Brad";
+            Brad.Introduction();
+
         }
         
     }
