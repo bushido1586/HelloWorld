@@ -13,6 +13,10 @@ namespace HelloWorld
             Brad.firstName = "Brad";
             Brad.Introduction();
 
+            Human michael = new Human();
+            michael.firstName = "Mikel";
+            michael.Introduction();
+            
         }
         
     }

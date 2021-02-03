@@ -7,7 +7,7 @@ namespace HelloWorld
     class Human
     {
         //member variable
-        public string firstName;
+        public string firstName="Michael";
 
         //member method
         public void Introduction()
