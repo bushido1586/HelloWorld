@@ -13,7 +13,7 @@ namespace HelloWorld
         //member method
         public void Introduction()
         {
-            Console.WriteLine("Hi, I'm {0}", firstName + " " + lastName);
+            Console.WriteLine("Hi, I'm {0} {1}", firstName, lastName);
         }
 
     }
