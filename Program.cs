@@ -11,11 +11,14 @@ namespace HelloWorld
             //create object of class (same as java)/ Instance of Human
             Human Brad = new Human();
             Brad.firstName = "Brad";
+            Brad.lastName = "Reed";
             Brad.Introduction();
 
-            Human michael = new Human();
-            michael.firstName = "Mikel";
-            michael.Introduction();
+            Human kristin = new Human();
+            kristin.firstName = "Kristin";
+            kristin.lastName = "Kiro";
+            kristin.Introduction();
+           
             
         }
         
