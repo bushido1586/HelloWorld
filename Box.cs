@@ -9,10 +9,12 @@ namespace HelloWorld
         //member variables
         private int length = 3;
         private int height;
-        public int width;
+        //public int width;
         public int volume;
 
         //properties
+
+        public int Width { get; set; }
 
         public int Height
         {
@@ -22,7 +24,14 @@ namespace HelloWorld
             }
             set
             {
-                height = value;
+                if (value < 0)
+                {
+                    height = -value;
+                }
+                else
+                {
+                    height = value;
+                }
             }
         }
 

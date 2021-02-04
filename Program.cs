@@ -10,8 +10,8 @@ namespace HelloWorld
         {
             Box box1 = new Box();
             box1.SetLength(4);
-            box1.Height = 4;
-            box1.width = 5;
+            box1.Height = -4;
+            box1.Width = 5;
 
             Console.WriteLine("box1 volume is " + box1.GetVolume());
 
