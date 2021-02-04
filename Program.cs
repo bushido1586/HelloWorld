@@ -20,6 +20,15 @@ namespace HelloWorld
 
             Human basicHuman2 = new Human("dave", "smith", "green");
             basicHuman2.Introduction();
+
+            Human natalie = new Human("Natalie");
+            natalie.Introduction();
+
+            Human michael = new Human("Michael", "Miller");
+            michael.Introduction();
+
+            Human frank = new Human("Frank", "Walter", 40);
+            frank.Introduction();
         }
         
     }

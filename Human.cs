@@ -42,7 +42,14 @@ namespace HelloWorld
             this.lastName = lastName;
             this.eyeColor = eyeColor;
             this.age = age;
-        } 
+        }
+
+        public Human(string firstName, string lastName, int age)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
 
         //member method
         public void Introduction()
@@ -50,7 +57,12 @@ namespace HelloWorld
             if (age != 0 && lastName !=null && eyeColor != null && firstName !=null)
             {
                 Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} years old.", firstName, lastName, eyeColor, age);
-            }else if(lastName != null && eyeColor != null && firstName != null)
+            }else if(age != 0 && lastName != null && firstName != null)
+            {
+                Console.WriteLine("Hi, I'm {0} {1}. and I'm {2} years old.", firstName, lastName, age);
+            }
+            
+            else if(lastName != null && eyeColor != null && firstName != null)
             {
                 Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes.", firstName, lastName, eyeColor);
 
@@ -61,6 +73,9 @@ namespace HelloWorld
             else if(firstName != null)
             {
                 Console.WriteLine("Hi, I'm {0}.", firstName);
+            }else
+            {
+                Console.WriteLine("parameters not met");
             }
         }
 
