@@ -8,14 +8,15 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Box box1 = new Box();
-            box1.SetLength(4);
-            box1.Height = -4;
-            box1.Width = 5;
+            Box box = new Box(3, 4, 5);
 
-            Console.WriteLine("box1 volume is " + box1.GetVolume());
+            Console.WriteLine("box1 volume is " + box.Volume);
+            box.Width = 10;
+            Console.WriteLine("Box volume is " + box.Volume);
+            box.DisplayInfo();
 
-            box1.DisplayInfo();
+            Console.WriteLine("Front Surfcae is " + box.FrontSurcae);
+            
         }
         
     }

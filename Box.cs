@@ -44,6 +44,13 @@ namespace HelloWorld
             }
         }
 
+        public Box(int length, int height, int width)
+        {
+            this.length= length;
+            this.height=height;
+            Width =width;
+        }
+
         public void SetLength(int length)
         {
             if(length <= 0)
@@ -58,9 +65,13 @@ namespace HelloWorld
             return this.length;
         }
 
-        public int GetVolume()
+        public int FrontSurcae
         {
-            return this.length * this.height * this.Width;
+            get
+            {
+                return height * length;
+            }
+
         }
 
         public void DisplayInfo()
