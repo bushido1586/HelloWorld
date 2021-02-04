@@ -10,9 +10,18 @@ namespace HelloWorld
         private int length = 3;
         private int height;
         //public int width;
-        public int volume;
+        private int volume;
 
         //properties
+
+        public int Volume
+        {
+            get
+            {
+                return this.length * this.height * this.Width;
+            }
+            
+        }
 
         public int Width { get; set; }
 
@@ -51,12 +60,12 @@ namespace HelloWorld
 
         public int GetVolume()
         {
-            return this.length * this.height * this.width;
+            return this.length * this.height * this.Width;
         }
 
         public void DisplayInfo()
         {
-            Console.WriteLine("Legnth is {0}, height is {1}, adn width is {2}. so the volume is {3}", length, height, width, volume = length*height*width);
+            Console.WriteLine("Legnth is {0}, height is {1}, adn width is {2}. so the volume is {3}", length, height, Width, volume = length*height*Width);
         }
 
     }
