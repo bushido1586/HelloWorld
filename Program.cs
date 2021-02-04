@@ -10,10 +10,10 @@ namespace HelloWorld
         {
             Box box1 = new Box();
             box1.SetLength(4);
-            box1.height = 4;
+            box1.Height = 4;
             box1.width = 5;
 
-            Console.WriteLine("box1 length is " + box1.GetLength());
+            Console.WriteLine("box1 volume is " + box1.GetVolume());
 
             box1.DisplayInfo();
         }
