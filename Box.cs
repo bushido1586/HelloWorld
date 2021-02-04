@@ -7,10 +7,15 @@ namespace HelloWorld
     class Box
     {
         //member variables
-        public int length;
+        private int length = 3;
         public int height;
         public int width;
         public int volume;
+
+        public void SetLength(int length)
+        {
+            this.length = length;
+        }
 
         public void DisplayInfo()
         {
