@@ -17,6 +17,11 @@ namespace HelloWorld
             this.length = length;
         }
 
+        public int GetLength()
+        {
+            return this.length;
+        }
+
         public void DisplayInfo()
         {
             Console.WriteLine("Legnth is {0}, height is {1}, adn width is {2}. so the volume is {3}", length, height, width, volume = length*height*width);

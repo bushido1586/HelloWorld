@@ -13,7 +13,7 @@ namespace HelloWorld
             box1.height = 4;
             box1.width = 5;
 
-            //Console.WriteLine("box1 length is " + box1.length);
+            Console.WriteLine("box1 length is " + box1.GetLength());
 
             box1.DisplayInfo();
         }
