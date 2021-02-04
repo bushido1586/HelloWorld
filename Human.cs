@@ -24,6 +24,17 @@ namespace HelloWorld
             this.eyeColor = eyeColor;
         }
 
+        public Human(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;            
+        }
+
+        public Human(string firstName)
+        {
+            this.firstName = firstName;         
+        }
+
         // parameterized constrcutor
         public Human(string firstName, string lastName, string eyeColor, int age)
         {
@@ -36,13 +47,20 @@ namespace HelloWorld
         //member method
         public void Introduction()
         {
-            if (age != 0)
+            if (age != 0 && lastName !=null && eyeColor != null && firstName !=null)
             {
                 Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} years old.", firstName, lastName, eyeColor, age);
-            }else
+            }else if(lastName != null && eyeColor != null && firstName != null)
             {
                 Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes.", firstName, lastName, eyeColor);
 
+            }else if(lastName != null && firstName != null)
+            {
+                Console.WriteLine("Hi, I'm {0} {1}.", firstName, lastName);
+            }
+            else if(firstName != null)
+            {
+                Console.WriteLine("Hi, I'm {0}.", firstName);
             }
         }
 
