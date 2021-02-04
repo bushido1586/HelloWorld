@@ -10,6 +10,13 @@ namespace HelloWorld
         public string firstName;
         public string lastName;
 
+        //constrcutor
+        public Human(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        } 
+
         //member method
         public void Introduction()
         {
