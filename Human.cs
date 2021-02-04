@@ -12,7 +12,19 @@ namespace HelloWorld
         public string eyeColor;
         public int age;
 
-        //constrcutor
+        //default constructor
+        public Human()
+        {
+            Console.WriteLine("Constructor called; object created");
+        }
+        public Human(string firstName, string lastName, string eyeColor)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.eyeColor = eyeColor;
+        }
+
+        // parameterized constrcutor
         public Human(string firstName, string lastName, string eyeColor, int age)
         {
             this.firstName = firstName;
@@ -24,12 +36,12 @@ namespace HelloWorld
         //member method
         public void Introduction()
         {
-            if (age == 1)
-            {
-                Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} year old.", firstName, lastName, eyeColor, age);
-            }else
+            if (age != 0)
             {
                 Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} years old.", firstName, lastName, eyeColor, age);
+            }else
+            {
+                Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes.", firstName, lastName, eyeColor);
 
             }
         }

@@ -13,7 +13,13 @@ namespace HelloWorld
             Brad.Introduction();
 
             Human kristin = new Human("Kristin", "Kiro", "brown", 33);
-            kristin.Introduction();           
+            kristin.Introduction();
+
+            Human basicHuman = new Human();
+            basicHuman.Introduction();
+
+            Human basicHuman2 = new Human("dave", "smith", "green");
+            basicHuman2.Introduction();
         }
         
     }
