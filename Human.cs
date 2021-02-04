@@ -24,7 +24,14 @@ namespace HelloWorld
         //member method
         public void Introduction()
         {
-            Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} years old.", firstName, lastName, eyeColor, age);
+            if (age == 1)
+            {
+                Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} year old.", firstName, lastName, eyeColor, age);
+            }else
+            {
+                Console.WriteLine("Hi, I'm {0} {1}. I have {2} eyes and I'm {3} years old.", firstName, lastName, eyeColor, age);
+
+            }
         }
 
     }
