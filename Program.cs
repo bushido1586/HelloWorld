@@ -29,7 +29,7 @@ namespace HelloWorld
 
             int[] mathGradesClassB = new int[] { 15, 20, 3, 17, 18, 15 };
 
-            Console.WriteLine("Length of grades for Class A: {0}", mathGradesClassA.Length );
+            Console.WriteLine("Length of grades for Class A: {0}", mathGradesClassA.Length);
             
         }
         
