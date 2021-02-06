@@ -8,22 +8,11 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            int[] nums = new int[10];
+            string[] friends = { "Paul", "Kristin", "Holly", "Matt", "Aaron" };
 
-            for(int i = 0; i <10; i++)
+            foreach(string name in friends)
             {
-                nums[i] = i+10;
-            }
-
-            for(int j =0; j<nums.Length; j++)
-            {
-                Console.WriteLine("elements{0} = {1}", j, nums[j]);
-            }
-            int counter = 0;
-
-            foreach(int k in nums)
-            {
-                Console.WriteLine("elements{0} = {1}",counter++,k);
+                Console.WriteLine("Hello, {0}!", name);
             }
             
         }
