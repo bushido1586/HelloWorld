@@ -24,6 +24,12 @@ namespace HelloWorld
             grades[0] = int.Parse(input);
 
             Console.WriteLine("grades at index 0 : {0}", grades[0]);
+            //other intilization options
+            int[] mathGradesClassA = { 20, 13, 12, 8, 8 };
+
+            int[] mathGradesClassB = new int[] { 15, 20, 3, 17, 18, 15 };
+
+            Console.WriteLine("Length of grades for Class A: {0}", mathGradesClassA.Length );
             
         }
         
