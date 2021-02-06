@@ -19,7 +19,12 @@ namespace HelloWorld
             {
                 Console.WriteLine("elements{0} = {1}", j, nums[j]);
             }
+            int counter = 0;
 
+            foreach(int k in nums)
+            {
+                Console.WriteLine("elements{0} = {1}",counter++,k);
+            }
             
         }
         
