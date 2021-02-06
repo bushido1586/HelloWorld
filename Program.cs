@@ -12,10 +12,10 @@ namespace HelloWorld
 
             for(int i = 0; i <10; i++)
             {
-                nums[i] = i;
+                nums[i] = i+10;
             }
 
-            for(int j =0; j<10; j++)
+            for(int j =0; j<nums.Length; j++)
             {
                 Console.WriteLine("elements{0} = {1}", j, nums[j]);
             }
