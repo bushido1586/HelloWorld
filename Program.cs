@@ -10,6 +10,8 @@ namespace HelloWorld
         {
             //declare 2D array
             string[,] matrix;
+
+
             //declare 3D array
 
             int[,,] threeD;
@@ -55,6 +57,8 @@ namespace HelloWorld
 
             int dimensions = array2DString.Rank;
             Console.WriteLine("The number of dimensions are :{0}",dimensions);
+
+            int[,] newArray = { { 1, 2 }, { 2, 3 } };
         }
         
     }
