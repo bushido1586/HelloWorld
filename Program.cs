@@ -44,6 +44,17 @@ namespace HelloWorld
 
             Console.WriteLine("The value is {0}", array3D[0,2,0]);
 
+            //alternate creation
+
+            string[,] array2DString = new string[3, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" } };
+
+
+            array2DString[1, 1] = "chicken";
+            Console.WriteLine(array2DString[1, 1]);
+
+
+            int dimensions = array2DString.Rank;
+            Console.WriteLine("The number of dimensions are :{0}",dimensions);
         }
         
     }
