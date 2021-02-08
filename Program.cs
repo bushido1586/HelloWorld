@@ -23,9 +23,27 @@ namespace HelloWorld
                 {7,8,9},//row 2
             };
 
-            Console.WriteLine("central value is {0}", array2D[1,1]);
+            Console.WriteLine("central value is {0}", array2D[2,0]);
 
-            
+
+            //3D array in acation
+
+            string[,,] array3D = new string[,,]
+            {
+                {
+                    {"hello","hi" },
+                    {"yo","sup" },
+                    {"hi There","What's up" }
+                },
+                {
+                    {"000","001"},
+                    {"010", "100" },
+                    {"Another one", "Last Entry" }
+                }
+            };
+
+            Console.WriteLine("The value is {0}", array3D[0,2,0]);
+
         }
         
     }
