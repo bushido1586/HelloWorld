@@ -8,12 +8,23 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            string[] friends = { "Paul", "Kristin", "Holly", "Matt", "Aaron" };
+            //declare 2D array
+            string[,] matrix;
+            //declare 3D array
 
-            foreach(string name in friends)
+            int[,,] threeD;
+
+
+            //2D array
+            int[,] array2D = new int[,]
             {
-                Console.WriteLine("Hello, {0}!", name);
-            }
+                {1,2,3},//row 0
+                {4,5,6},//row 1
+                {7,8,9},//row 2
+            };
+
+            Console.WriteLine("central value is {0}", array2D[1,1]);
+
             
         }
         
